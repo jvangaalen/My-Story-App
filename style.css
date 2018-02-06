@@ -7,6 +7,14 @@ html {
 	vertical-align: baseline;
 }
 
+h1 {
+	font-family: norican;
+}
+
+p{
+	font-family: averia serif libre;
+}
+
 body {
 	background: lightblue;
 	padding: 50px 0 0;
@@ -41,10 +49,12 @@ header {
 }
 
 footer {
-	text-align: center;
-	position: absolute;
+	text-align: right;
+	position: fixed;
 	bottom: 0;
 }
+
+
 
 
 
