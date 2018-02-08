@@ -1,4 +1,17 @@
-const welcome = alert ("Welcome to your story. Please follow the prompts");
+// make a form with input fields for Name, noun, verb, adverb etc..
+// create a submit button after each form field input is filled out
+// add alert prompt if not all fields are filled in saying, "Oops, please fill in blank entries"
+// stop js from loading unless all form fields are filled in
+// clear form after entry submission
+// add form field entry inputs to story line in .story
+// load .story to page. 
+
+
+
+
+
+
+
 const noun = prompt ("Please enter a noun");
 const name = prompt ("Please enter a name");
 const place = prompt("Please enter a place");
