@@ -18,8 +18,8 @@ const place = prompt("Please enter a place");
 const animal = prompt ("Please enter an animal");
 const verb = prompt ("Please enter a verb");
 
-let story = "Once upon a time there was a " + animal + " who's name was " + name;
-story += ". He " + verb + " on Sundays. ";
-story += " He lived in a  " + noun + " and visited " + place + " Where he had a summer house. "
+let shortStory = "This is the story of " + name; + " the " + animal;
+shortStory += ". He likes to " + verb + " on Sundays. ";
+shortStory += " He lives in a  " + noun + " and realy likes to visit " + place + " Where he has a summer house. "
 
-document.write("<p>" + story + "</p>");
+document.write("<p>" + shortStory + "</p>") in document.createElement(story);

@@ -42,10 +42,28 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 10px;
+	padding-bottom: 25px;
 }
 
 .word-form {
 
+}
+button {
+	display: block;
+	height: 40px;
+	width: 100%;
+	text-align: initial;
+	border-radius: 30px;
+	margin-top: .5em;
+	font-family: averia serif libre;
+	background-color: white;
+
+}
+
+.story {
+	text-align: center;
+	font-family: nicone;
+	font-size: 2em;
 }
 
 footer {
