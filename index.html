@@ -19,16 +19,36 @@
             <div class="banner">
                 <img src="https://picsum.photos/g/150/150">
             </class>
-<!This is where the java script form will go. This is where the user will input words into form >
+<!This is where the java script form will go. This is where the user will input words into a form >
             <div class="word-form">
-                <button>Please enter a noun</button>
-                <button>Please enter a name</button>
-                <button>Please enter a place</button>
-                <button>Please enter an animal</button>
-                <button>Please enter a verb</button>
+                <form onsubmit="return user-word;" method="post" name="word-form">
+                    <label>Please enter a noun.</label>
+                    <input type="text" name="noun" id="noun" />
+                    <input type="submit" name="submit" onclick="validate()" />
+                </form>  
+                <form onsubmit="return false;" method="post" name="word-form">
+                    <label>Please enter a name.</label>
+                    <input type="text" name="name" id="name" />
+                    <input type="submit" name="submit" onclick="validate()" />
+                </form>  
+                <form onsubmit="return false;" method="post" name="word-form">
+                    <label>Please enter a place.</label>
+                    <input type="text" name="place" id="place" />
+                    <input type="submit" name="submit" onclick="validate()" />
+                </form>  
+                <form onsubmit="return false;" method="post" name="word-form">
+                    <label>Please enter an animal.</label>
+                    <input type="text" name="animal" id="animal" />
+                    <input type="submit" name="submit" onclick="validate()" />
+                </form>  
+                <form onsubmit="return false;" method="post" name="word-form">
+                    <label>Please enter a verb.</label>
+                    <input type="text" name="verb" id="verb" />
+                    <input type="submit" name="submit" onclick="validate()" />
+                </form>  
             </div>
 <!This is where the from will go into a file for the story.>
-           <div class="story"></div>
+           <div class="story"><p></p></div>
 
 <! This is where the footer will go. Copy right, face book and twitter logos>
           
@@ -38,7 +58,7 @@
             </footer>
         </div>
         
-        <!script src="app.js"></script>
+        <script src="app.js"></script>
     </body>  
 </html>
 	
