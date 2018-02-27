@@ -18,42 +18,38 @@
 <! This is where the banner will go. Add a pic of a book, or book animation>
             <div class="banner">
                 <img src="https://picsum.photos/g/150/150">
-            </class>
+            </div>
 <!This is where the java script form will go. This is where the user will input words into a form >
             <div class="word-form">
-                <form onsubmit="return user-word;" method="post" name="word-form">
+                <form onsubmit="validate()" method="post" name="word-form">
                     <label>Please enter a noun.</label>
-                    <input type="text" name="noun" id="noun" />
-                    <input type="submit" name="submit" onclick="validate()" />
-                </form>  
-                <form onsubmit="return false;" method="post" name="word-form">
+                    <input type="text" name="noun" id="noun" />                   
+                  
+            
                     <label>Please enter a name.</label>
-                    <input type="text" name="name" id="name" />
-                    <input type="submit" name="submit" onclick="validate()" />
-                </form>  
-                <form onsubmit="return false;" method="post" name="word-form">
+                    <input type="text" name="name" id="name" />                    
+                
+                
                     <label>Please enter a place.</label>
-                    <input type="text" name="place" id="place" />
-                    <input type="submit" name="submit" onclick="validate()" />
-                </form>  
-                <form onsubmit="return false;" method="post" name="word-form">
+                    <input type="text" name="place" id="place" />                    
+                
+             
                     <label>Please enter an animal.</label>
-                    <input type="text" name="animal" id="animal" />
-                    <input type="submit" name="submit" onclick="validate()" />
-                </form>  
-                <form onsubmit="return false;" method="post" name="word-form">
+                    <input type="text" name="animal" id="animal" />                    
+                
+             
                     <label>Please enter a verb.</label>
                     <input type="text" name="verb" id="verb" />
-                    <input type="submit" name="submit" onclick="validate()" />
+                    <input type="submit" name="submit" />
                 </form>  
             </div>
 <!This is where the from will go into a file for the story.>
-           <div class="story"><p></p></div>
+           <div id="story"></div>
 
 <! This is where the footer will go. Copy right, face book and twitter logos>
           
             <footer>
-                <a href="mailto:jerome.vangaalen@gmail.com?Subject=Hello" target="_top"><img src="images\mail.png"></a> 
+                <a href="mailto:jerome.vangaalen@gmail.com?Subject=Hello" target="_top"><img src="../img/mail.png"></a> 
                 <span>&copy; My Story App 2018.</span>
             </footer>
         </div>
