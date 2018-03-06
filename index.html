@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <! This is where google fonts will go. >
     <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Niconne|Norican|Yesteryear" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 	<title> The Story Maker</title>
 </head>
     <body>
@@ -20,7 +21,7 @@
                 <img src="https://picsum.photos/g/150/150">
             </div>
 <!This is where the java script form will go. This is where the user will input words into a form >
-            <div id="word-form">
+        <div id="word-form">
                 <form onsubmit="return validate()" method="post" name="word-form">
                     <label>Please enter a noun.</label>
                     <input type="text" name="noun" id="noun" />                   
@@ -43,17 +44,69 @@
                     <input type="submit" name="submit" />
                 </form>  
             </div>
+        <div class="btn-group mt-4" role="group" aria-label="Callout buttons" data-toggle="modal" data-target="#form">
+                <button type="button" class="btn btn-primary btn-lg">Begin Making Your Story</button>
+    
+</div>
 <!This is where the from will go into a file for the story.>
            <div id="story"></div>
 
 <! This is where the footer will go. Copy right, face book and twitter logos>
-          
-            <footer>
-                <a href="mailto:jerome.vangaalen@gmail.com?Subject=Hello" target="_top"><img src="../img/mail.png"></a> 
-                <span>&copy; My Story App 2018.</span>
-            </footer>
+
+<! Footer >
+<div class="col-md text-md-right">
+        <a href="mailto:jerome.vangaalen@gmail.com?Subject=Hello" target="_top"><img src="./images/mail.png"></a> 
+        <small>&copy; 2018 My Story App &amp; Treehouse</small>
+      </div>             
+ <!/footer>
+
+ <! ========================================
+ Form Modal
+ ======================================= >
+<div class="modal fade" id="word-form" tabindex="-1" role="dialog" aria-label="Register form" aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content">
+     <div class="modal-header bg-info text-white">
+       <h5 class="modal-title" id="exampleModalLabel">Enter in the following words to complet the story!</h5>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+     <div class="modal-body">
+       <form>
+         </div>
+         <div class="form-group">
+           <label class="form-control-label" for="fnoun">Please enter a noun.</label>
+           <input type="text" class="form-control" id="noun">
+         </div>
+         <div class="form-group">
+           <label class="form-control-label" for="fname">Please Enter a name.</label>
+           <input type="text" class="form-control" id="name">
+         </div> 
+         <div class="form-group">
+            <label class="form-control-label" for="fanimal">Please Enter an animal.</label>
+             <input type="text" class="form-control" id="animal">
+         </div>
+         <div class="form-group">
+            <label class="form-control-label" for="fname">Please Enter a verb (present tense).</label>
+            <input type="text" class="form-control" id="verb">
         </div>
+        <div class="form-group">
+             <label class="form-control-label" for="fplace">Please Enter a place.</label>
+             <input type="text" class="form-control" id="place">
+         </div>
+
+         <hr class="mb-4">
+           <button type="submit" class="btn btn-primary btn-lg">Register</button>
+       </form>
+     </div>
+   </div>
+ </div>
         
+      
+          
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>  
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="app.js"></script>
     </body>  
 </html>
