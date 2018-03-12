@@ -7,93 +7,103 @@
     <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Niconne|Norican|Yesteryear" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>   
 	<title> The Story Maker</title>
 </head>
     <body>
-        <div class="container">
-            <header>
-                    <h1>The Story Maker</h1>
-                    <p>This is an app that will prompt you for a type of word.</p>
-                    <p>Once you enter the words a story will start to form!</p>
-             </header>
+      <div class="container">
+        <header>
+          <nav class="navbar fixed-top navbar-dark bg-dark">
+           <a class="navbar-brand" href="#">
+             <i class="fas fa-book" width="30" height="30" class="d-inline-block align-top" alt="book logo"></i>
+                The Story Maker
+            </a>
+         </nav>
+              <p>This is an app that will prompt you for a type of word.
+                  Once you enter the words a story will start to form!</p>
+        </header>
 <! This is where the banner will go. Add a pic of a book, or book animation>
-            <div class="banner">  
-              <img src="./images/book.jpeg" alt="girl reading a book">            
-            </div>
-            
+        <div class="banner">  
+          <img src="./images/book.jpeg" alt="girl reading a book">            
+        </div>        
 
 <! This is where the button to start the story will go.>        
         <div class="btn-group mt-4" role="group" aria-label="Callout buttons" data-toggle="modal" data-target="#word-form">
-                <button type="button" class="btn btn-primary btn-lg">Begin Making Your Story</button>
-    
-</div>
+           <button type="button" class="btn-secondary btn-lg btn-block">Begin Making Your Story</button>
+        </div>
 <!This is where the from will go into a file for the story.>
-           <div id="story"></div>
+         <div id="story">
+         </div>
 
 <! This is where the footer will go. Copy right, face book and twitter logos>
- 
-      <div class="navbar fixed-bottom navbar-light bg-light">
-        <div class="col-md-12">
-          <ul class="nav-item">
-            <li class="nav-item">
-              <a class="navbar-brand nav-link active" href="https://twitter.com/jeromevangaalen"><img src="./images/twitter-wrap.png" alt="twitter logo"></a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-brand nav-link active" href="https://www.facebook.com/jerome.vangaalen"><img src="./images/facebook-wrap.png" alt="facebook logo"></a>
-            </li>
-            <div class="col-md text-md-right">
-              <a "navbar-brand" href="mailto:jerome.vangaalen@gmail.com?Subject=Hello" target="_top"><img src="./images/mail.png" alt="email envelope icon"></a> 
-              <small>&copy; 2018 My Story App &amp; Treehouse</small>
-            </div> 
-          </ul>
-        </div> 
-      </div>           
+
+        <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">The Story Maker</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="navbar-brand nav-link active" href="https://twitter.com/jeromevangaalen"><i class="fab fa-twitter" alt="twitter logo"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand nav-link active" href="https://www.facebook.com/jerome.vangaalen"><i class="fab fa-facebook-square" alt="face book logo"></i></a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              &copy; 2018 My Story App 
+              <a "navbar-brand" href="mailto:jer.vangaalen@gmail.com?Subject=Hello" target="_top"><img src="./images/mail.png" alt="email envelope icon"></a> 
+            </span>
+          </div>
+        </nav>
+      
 
 
  <!This is form will go. This is where the user will input words into a form >
  <! ========================================
  Form Modal
  ======================================= >
-<div class="modal fade" id="word-form" tabindex="-1" role="dialog" aria-label="Register form" aria-hidden="true">
- <div class="modal-dialog" role="document">
-   <div class="modal-content">
-     <div class="modal-header bg-info text-white">
-       <h5 class="modal-title" id="exampleModalLabel">Enter in the following words to complete the story!</h5>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
-     <div class="modal-body">
-       <form onsubmit="return validate()" method="POST" name="word-form">
-         </div>
-         <h5 class="mb-4">Fill in the blanks below</h5>
-         <div class="form-group">
-           <label class="form-control-label" for="fnoun">Noun.</label>
-           <input type="text" class="form-control" id="noun">
-         </div>
-         <div class="form-group">
-           <label class="form-control-label" for="fname">Name.</label>
-           <input type="text" class="form-control" id="name">
-         </div> 
-         <div class="form-group">
-            <label class="form-control-label" for="fanimal">Animal.</label>
-             <input type="text" class="form-control" id="animal">
-         </div>
-         <div class="form-group">
-            <label class="form-control-label" for="fname">Verb.</label>
-            <input type="text" class="form-control" id="verb">
-        </div>
-        <div class="form-group">
-             <label class="form-control-label" for="fplace">Place.</label>
-             <input type="text" class="form-control" id="place">
-         </div>
+        <div class="modal fade" id="word-form" tabindex="-1" role="dialog" aria-label="Register form" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+              <h5 class="modal-title">Enter in the following words to complete the story!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form onsubmit="return validate()" method="POST" name="word-form">
+                </div>
+                <h5 class="mb-4">Fill in the blanks below</h5>
+                <div class="form-group">
+                  <label class="form-control-label" for="fnoun">Noun:</label>
+                  <input type="text" class="form-control" id="noun">
+                </div>
+                <div class="form-group">
+                  <label class="form-control-label" for="fname">Name:</label>
+                  <input type="text" class="form-control" id="name">
+                </div> 
+                <div class="form-group">
+                    <label class="form-control-label" for="fanimal">Animal:</label>
+                    <input type="text" class="form-control" id="animal">
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="f">Verb:</label>
+                    <input type="text" class="form-control" id="verb">
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="fplace">Place:</label>
+                    <input type="text" class="form-control" id="place">
+                </div>
 
-         <hr class="mb-4">
-           <button type="submit" class="btn btn-primary btn-lg">Click here to see your story.</button>
-       </form>
-     </div>
-   </div>
- </div>
+                <hr class="mb-4"><button type="submit" class="btn btn-primary btn-lg">Click here to see your story.</button>
+                  
+              </form>
+            </div>
+          </div>
+        </div>
         
       
           

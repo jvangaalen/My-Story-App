@@ -10,14 +10,14 @@ function validate (event) {
 // add alert prompt if not all fields are filled in saying, "Oops, please fill in blank entries"
    
 // stop js from loading unless all form fields are filled in
-    document.getElementById("word-form").addEventListener("click", function(event){
+    document.getElementById("word-form").addEventListener("onSubmit", function(event){
     event.preventDefault()
 });
 
 // add form field entry inputs to story line in .story
 var shortStory = "This is the story of " + name  + " the " + animal;
-shortStory += ". He likes to " + verb + " on Sundays. ";
-shortStory += " He lives in a  " + noun + " and realy likes to visit " + place + " Where he has a summer house. ";
+shortStory += ". It likes to " + verb + " on Sundays. ";
+shortStory += " It lives in a  " + noun + " and realy likes to visit " + place + " where it has a summer house. ";
 // load #story to page. 
 
 var writeStory=document.querySelector("#story");

@@ -1,46 +1,34 @@
-html {
-	margin: 0;
-	padding:0;
-	border: 0;
-	font: inherit;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-
-h1 {
-	font-family: norican;
-}
-
 
 
 body {
-	background: lightblue;
+	background: skyblue;
 	padding: 50px 0 0;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 83.5%;
-}
-
-.container {
-	padding-top: 60px;
 }
 
 
 header {
+	font-family: nicone;
+	font-size: 2em;
 	text-align: center;
 }
 
 p {
-	font-family: norican;
-	font-size: 2em;
+	border: 5px solid slategray;
+	margin-top:  15px;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px rgb(68, 68, 68);
+	background-color: whitesmoke;
 }
 
 
 .banner {
 	height: 200px;
 	width: 100%;
+	background-color: whitesmoke;
 	background-size: auto;	
 	text-align: center;	
-	background-color: slategray;
+	border: 5px solid slategray;
+	box-shadow: 10px 10px 5px rgb(68, 68, 68);
 	border-radius: 25px;
 }
 
@@ -48,18 +36,32 @@ p {
 	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 10px;
-	padding-bottom: 25px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	box-shadow: 10px 10px 5px rgb(68, 68, 68);
 }
-
-
 
 #story {
 	height: 500px;
 	width: 100%;
 	text-align: center;
-	font-family: yesteryear;
+	font-family: nicone;
 	font-size: 3em;
+}
+
+.navbar {
+	font-family: norican;
+
+}
+
+.navbar img {
+	height: 40px;
+	width: 40px;
+}
+
+
+.form-control-label, .mb-4 {
+	padding-left: 1em;
 }
 
 
