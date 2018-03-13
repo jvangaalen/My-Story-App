@@ -2,6 +2,9 @@
 
 body {
 	background-image: url(./images/big-book.jpeg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	padding: 50px 0 0;
 }
 
@@ -11,7 +14,13 @@ body {
 header {
 	font-family: nicone;
 	font-size: 2em;
-	text-align: center;
+	text-align: left;
+	
+}
+
+header p {
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 p {
@@ -24,23 +33,25 @@ p {
 
 
 .banner {
-	height: 200px;
+	height: 300px;
 	width: 100%;
 	background-color: whitesmoke;
-	background-size: auto;	
-	text-align: center;	
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+	text-justify: inherit;
 	border: 5px solid slategray;
-	box-shadow: 10px 10px 5px rgb(68, 68, 68);
 	border-radius: 25px;
 }
 
 .banner img {
 	display: inline-block;
-	margin-left: auto;
+	margin-top: 10px;
+	margin-left: 10px;
 	margin-right: auto;
-	padding-top: 5px;
-	padding-bottom: 10px;
-	box-shadow: 10px 10px 5px rgb(68, 68, 68);
+	padding-top: 1px;
+	padding-bottom: 1px;
+	box-shadow: 5px 5px 5px rgb(68, 68, 68);
 }
 
 #story {
