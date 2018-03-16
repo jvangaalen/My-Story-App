@@ -1,38 +1,28 @@
 
 
 body {
-	background: url(./images/big-book.jpeg);
+	background: url(./images/big-book.jpeg); /* Set Background Image */
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: cover; /* make background image cover the whoel element */
 }
 
 
 
 
 header {
-	font-family: nicone;
+	font-family: nicone; /* Set text font in header */
 	font-size: 2em;
 	text-align: left;
 	
 }
 
-header p {
-	padding-left: 1em;
-	padding-right: 1em;
-}
-
-p {
-	border: 5px solid slategray;
-	margin-top:  15px;
-	border-radius: 25px;
-	box-shadow: 10px 10px 5px rgb(68, 68, 68);
-	background-color: whitesmoke;
-}
 
 
-.banner {
-	height: 300px;
+
+/* Create border box for banner */
+.media {
+	height: 200px;
 	width: 100%;
 	background-color: whitesmoke;
 	padding-left: 10px;
@@ -40,9 +30,15 @@ p {
 	text-align: left;
 	border: 5px solid slategray;
 	border-radius: 25px;
+	margin-top: 2.5em;
+	text-align: left;
+	
 }
 
-.banner img {
+/* Set banner image properties */
+.media img {
+	height: 80px;
+	width: 80px;
 	display: inline-block;
 	margin-top: 10px;
 	margin-left: 10px;
@@ -52,6 +48,7 @@ p {
 	box-shadow: 5px 5px 5px rgb(68, 68, 68);
 }
 
+/* Creat border, box for story when it prints from .js */
 #story {
 	height: 500px;
 	width: 100%;
@@ -60,6 +57,17 @@ p {
 	font-size: 3em;
 }
 
+#story p {
+	border: 5px solid slategray;
+	margin-top:  15px;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px rgb(68, 68, 68);
+	background-color: whitesmoke;
+}
+
+
+
+/* Footer styles */
 .navbar {
 	font-family: norican;
 
