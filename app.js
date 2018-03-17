@@ -1,5 +1,5 @@
 
-// create a variable that will add id's from the word-form class  into  shortstory after submit button is clicked.
+// create  variables that will add id's from the word-form class  into  shortstory after submit button is clicked.
 function validate (event) {
     var noun = document.getElementById("noun").value;
     var name = document.getElementById("name").value;

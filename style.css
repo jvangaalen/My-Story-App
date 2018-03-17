@@ -4,7 +4,7 @@ body {
 	background: url(./images/big-book.jpeg); /* Set Background Image */
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover; /* make background image cover the whoel element */
+	background-size: cover; /* make background image cover the whole element */
 }
 
 
@@ -22,7 +22,7 @@ header {
 
 /* Create border box for banner */
 .media {
-	height: 200px;
+	height: 100%;
 	width: 100%;
 	background-color: whitesmoke;
 	padding-left: 10px;
@@ -45,10 +45,11 @@ header {
 	margin-right: auto;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	box-shadow: 5px 5px 5px rgb(68, 68, 68);
+	border: 2px solid slategray;
+	border-radius: 5px;
 }
 
-/* Creat border, box for story when it prints from .js */
+/* Create border, box for story when it prints from .js */
 #story {
 	height: 500px;
 	width: 100%;
@@ -77,6 +78,7 @@ header {
 	height: 40px;
 	width: 40px;
 }
+
 
 
 .form-control-label, .mb-4 {
