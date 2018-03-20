@@ -2,7 +2,7 @@
 
 ## Description
 ```
-A brief description of your project
+My project is a simple game that resembles a mad lib. The user inputs a type of word in a form field. After the forms are complete the user closes out of the form and the words are then inserted into a story on the page. 
 
 ```
 
@@ -12,14 +12,20 @@ A brief description of your project
 ```
 The class(es) I created are:
 
-1. class name ex( .main-info-section )
-.. what class does, ex( adds padding & changes background color of .main-info-section )
+1. class name ( .media, .media img )
+.. Adds Padding, border, margin, background color, and shadowing to .media below my nav bar.
 
-2.
+2. class name ( #story, #story p )
 
-```
+```Adds padding, border margin, background color, shadowing, text size, font and alignment with in #story.
 
+3. class name ( .navbar, .navbar img  )
 
+```Adds Font family to text, adds fixed height and width properties to the picture in .navbar.
+
+4. class name ( .form-control-label,)
+
+```Adds Padding between text and input box in the from that pops up.
 
 ## Custom JavaScript Functions
 ```

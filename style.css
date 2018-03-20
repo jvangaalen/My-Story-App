@@ -22,8 +22,7 @@ header {
 
 /* Create border box for banner */
 .media {
-	height: 100%;
-	width: 100%;
+
 	background-color: whitesmoke;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -50,10 +49,9 @@ header {
 }
 
 /* Create border, box for story when it prints from .js */
+
 #story {
-	height: 500px;
-	width: 100%;
-	text-align: center;
+	text-align: left;
 	font-family: nicone;
 	font-size: 3em;
 }
@@ -84,9 +82,6 @@ header {
 .form-control-label, .mb-4 {
 	padding-left: 1em;
 }
-
-
-
 
 
 
