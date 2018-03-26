@@ -25,13 +25,23 @@ The class(es) I created are:
 
 4. class name ( .form-control-label,)
 
-```Adds Padding between text and input box in the from that pops up.
+```Adds Padding between text and input box in the form that pops up.
 
 ## Custom JavaScript Functions
 ```
 The javascript functions I created are:
 
-1. function name ex( animate() )
-.. what function does ex( animate() is used to move the elements in the info div across the screen)
+1. document.getElementById("word-form").addEventListener("onSubmit", function(event){
+    event.preventDefault()
+});
+
+.. this function keeps the program from ending untill all form fields are filled in and the submit button is pressed.
+
+2. var writeStory=document.querySelector("#story");
+writeStory.innerHTML= "<p>" + shortStory + "</p>";
+return false;
+}
+
+.. this function takes the variables and insterts them into a class that prints out in the html file. 
 
 ```
