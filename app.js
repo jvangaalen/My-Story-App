@@ -17,7 +17,7 @@ function validate (event) {
 // add form field entry inputs to story line in .story
 var shortStory = "This is the story of " + name  + " the " + animal;
 shortStory += ". "  + name + " likes to " + verb + " on Sundays. ";
-shortStory +=  name + " lives in a  " + noun + " and realy likes to visit " + place + " where " + name + " has a summer house. ";
+shortStory +=  name + " lives in a  " + noun + " and really likes to visit " + place + " where " + name + " has a summer house. ";
 
 // load #story to page. 
 
