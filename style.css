@@ -1,13 +1,10 @@
 
 
 body {
-	height: 100%;
-	background: url(./images/big-book.jpeg) no repeat; /* Set Background Image */
-	background-repeat: repeat-y;
+	background: url(./images/big-book.jpeg); /* Set Background Image */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: 100% 100%; /* make background image cover the whole element */
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size:cover;
 }
 
 
