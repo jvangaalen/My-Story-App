@@ -1,7 +1,7 @@
 
 
 body {
-	background: url(./images/big-book.jpeg); /* Set Background Image */
+	background: url(../images/big-book.jpeg); /* Set Background Image */
 	background-color: skyblue;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
