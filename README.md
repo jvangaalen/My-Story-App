@@ -15,7 +15,7 @@ The class(es) I created are:
 1. class name ( .media, .media img )
 .. Adds Padding, border, margin, background color, and shadowing to .media below my nav bar.
 
-2. class name ( #story, #story p )
+2. ID name ( #story, #story p )
 
 ```Adds padding, border margin, background color, shadowing, text size, font and alignment with in #story.
 

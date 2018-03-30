@@ -1,11 +1,7 @@
 
 
 body {
-	background: url(../images/big-book.jpeg); /* Set Background Image */
 	background-color: skyblue;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%; /* make background image cover the whole element */
 }
 
 
@@ -13,9 +9,8 @@ body {
 
 header {
 	font-family: nicone; /* Set text font in header */
-	font-size: 2em;
-	text-align: left;
-	
+	font-size: 3em;
+	text-align: left;	
 }
 
 
@@ -23,7 +18,6 @@ header {
 
 /* Create border box for banner */
 .media {
-
 	background-color: whitesmoke;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -31,8 +25,7 @@ header {
 	border: 5px solid slategray;
 	border-radius: 25px;
 	margin-top: 2.5em;
-	text-align: left;
-	
+	text-align: left;	
 }
 
 /* Set banner image properties */
@@ -71,7 +64,6 @@ header {
 /* Footer styles */
 .navbar {
 	font-family: norican;
-
 }
 
 .navbar img {
@@ -83,8 +75,23 @@ header {
 
 .form-control-label, .mb-4 {
 	padding-left: 1em;
+	font-size: 2em;
 }
 
+@media (min-width: 769px) {
+	body {
+		background: url(../images/big-book.jpeg); /* Set Background Image */
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%; /* make background image cover the whole element */
+	}
+
+	.form-control-label, .mb-4 {
+		padding-left: 1em;
+		font-size: 1em;
+	}
+	
+}
 
 
 
